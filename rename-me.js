@@ -1,338 +1,373 @@
-alert("JavaScript works!");
-
 //alert("JavaScript works!");
 
 // Brandee Ogunjobi
-// SDI Term 1408
+// SDI Term 1410
 // Project 3
 
 //Start - 
 	alert("Hello!");
 	
-// Global Variables ///
-var ll = 15;
-var yy = 25;
-var myBrother = "Tyelerr";
-var myBoy = "Johnny";
-var l = true, y = true, w = false;
+//Global Variables
+var myAssignments = ["Project 1", "Project 2", "Project 3"];
+var gradeD = false;
+var gradeF = false;
+var gradeA = true;
 var q = "What is 10+10?"
 var a = 20;
 var c = "<h2>Great job!</h2>"
 var ic = "<h2>Sorry, right answer was \20.</h2>"
-var cupSales = " cups of Lemonade"
-var cream = "Ice Cream"
-var whatTime = "Five O'Clock"
-var cream = "Ice Cream";
-var myBoy = "Johnny";
-var myBrother = "Tyelerr"
-var lemonadeSales = "exceeded your sales"
-var stringA = "If it is hot outside,"
-var stringB = "the boys will sell "
-var question ="Did the boys make there sales quota?"
-var boysName = "Happy Faces"
-var reward = "Yummy Yum"
-var appleStreet = false;
-var beanStreet = false;
-var javaStreet = true;
-var avocadoIce = false;
-var chileIce = false;
-var chocoice = true;
-var myBoy = "Johnny"
-var myBrother = "Tyelerr" 
-var timePlay = "I wonder if "
-var willBe = " will be up for the challenge!"
+var ll = 95;
+var yy = 85;
+var myClass = "Tyelerr";
+var myWork = "Project 3";
+var l = true, y = true, w = false;
+var name = "Brandee";
+var age = 38;
 
-//Prompt
- var name = prompt ("Are you ready for the story?");
-
-//Procedure 
-var getGreetingByName = function(name) {
+//Return Value
+var getGreetingByName = function (name) {
 	var currentHour = (new Date()).getHours(),
-		timeOfDay, greeting;
-		if (currentHour < 12) { timeOfDay = "morning"; }
-		else if (currentHour < 17) { timeOfDay = "afternoon"; }
-		else { timeOfDay = "evening"; }
-		greeting = "Good " + timeOfDay + "," + name + "!";
+		timeOfDay,greeting;
+	if (currentHour < 12) { timeOfDay = "Morning";}
+	else if (currentHour < 17) { timeOfDay = "Afternoon";}
+	else {timeOfDay = "Evening";}
+		greeting ="Good " + timeOfDay + "," + name + "!";
 		//console.log();
 		return greeting;
 };
 
-var fullGreeting = getGreetingByName("Mr. Lewis");
-console.log(fullGreeting);
+	var fullGreeting = getGreetingByName("Mr. Lewis");
+	console.log(fullGreeting);
 
-//Conditional
-var response = prompt(q,"20");
+
+//Conditional 
+	var response = prompt(q,"20");
 		if (response != a)
 			 { alert("Wrong, it was 20!!"); }
 		else { alert("Correct! You got it!"); }
-var o = (response == a) ? c : ic;
+	var o = (response == a) ? c : ic;
 		document.write("<BR/>");
 		document.write(o);
 
-//Number Function 
-var ice = myFunction(3*5);
-	console.log("They were so happy to exceed their goal selling over " 
-	+ ice  + cupSales + ".");
-	function myFunction(x, t) {
-		return 3 * 5;
-}
+//Nested Condition
+	var numberOfGrades = prompt("How many assignments have you done?")
 
-//Return String 
-
-	alert:console.log("Don't worry, we will have the " + cream + " party soon!");
-
-if (whatTime == "Five O'clock")
+	if(numberOfGrades===04)
 {
-	console.log("whatTime is Five O'Clock");
+		console.log("I finished my work!")
+} else if(numberOfGrades<04)
+{
+		console.log("I couldn't finish!")
+}
+	else if(numberOfGrades>04)
+{
+		console.log("I get extra credit!")
 }
 
-//Boolean
+//Return String
+	var greet = function(person,greet) {
+	var text = greet + ", " + person;
+	return text;
+	};
+	console.log(greet("is going great.","This project"));
+			
+
+//Argument Boolean
 var istrue=function (){
 	if ((l && y) || w) {
-			console.log("The expression is true");
-			return true;
-	} else {
-			console.log("The expression is false");
-			return false;
-}
-			console.log("So the results are in " + myBoy + " sold " + ll + ".");
-			console.log("And " + myBrother + " sold " + yy + "!");
-}
+		console.log("The expression is true");
+		return true;
+		} else {
+		console.log("The expression is false");
+		return false;
+		}
+		console.log("So the results are in " + myWork + " got a " + ll + ".");
+		console.log("And " + myClass + " total grade is a " + yy + "!");
+	}
 	var l = true; 
 	if(l == true)
-{
-console.log("this is true");
-}
-if (istrue) {
-        console.log("The expression is true");
+	{
+		console.log("this is true");
+	}
+	if (istrue) {
+		console.log("The expression is true");
     } else {
-        console.log("The expression is false");
+		console.log("The expression is false");
 }
-	
-// Return Value
-var number1 = 3;
-function times(number1)
-{
-	var c =(number1*5)
-	console.log ;return c; 
-}
-var feedBoys = function (boysName, reward) {
-	console.log("Gave some " + reward + " to " + boysName);
-};
-var boysName = "Happy Faces"
-var reward = "Yummy Yummy Ice Cream"
-feedBoys("The Boys", "Yummy Yum Ice Cream");
-console.log("I already gave the little " + boysName + " some " + reward);
-
-//Procedure
-s=prompt('Do you have a favorite ice cream?','Chocolate Chip');
-  alert('If you like ice cream join the story!');
-
-//Output
-console.log(myBoy +  " is waiting for his " + cream + ".");
-console.log(myBoy + " and " + myBrother + " you both " +  lemonadeSales + "!" + " Are you ready for your party?");
-console.log('Don\'t you just love ' + cream + "?");
-console.log('My favorite ' + cream + " is vanilla!");
-console.log(myBrother + " says the party is at " + whatTime + " and " + myBoy + ' shouts "hooray"!');
 
 //Return Boolean
-if ((!appleStreet && !beanStreet) || javaStreet) {
-        console.log("The expression is true");
+if((!gradeD && !gradeF) || gradeA) {
+        alert("The expression is true");
     } else {
-        console.log("The expression is false");
+        alert("The expression is false");
     }
-    console.log("You made it to JavaStreet Ice Cream Shop!");
     
-//Local Variables    - // Function
-function myFunction() 
-{
-	var choco = "Chocolate Ice Cream";
-	var vanilla = "Vanilla Ice Cream";
-	if (choco != vanilla) {
-			var straw = "Strawberry";
-		} else {
-			var mint = "Mint Chocolate Chip";
-			console.log(mint); }
+ {
 }
-var mint = "Mint Chocolate Chip";
-console.log(mint);
+
+// Return Number 
+var getReady = "course."
+var courseWeeks = myFunction(4 * 1);
+	console.log("In the upcoming class has " + courseWeeks  + " weeks in the " + getReady);
+	function myFunction(x, t) {
+		return 4 * 1;
+}
+
+
+//Array
+	var myAssignments = ["Project 1", "Project 2", "Project 3"];
+
+		console.log(myAssignments);
+//Name Array Elements
+		myAssignments[2] = "Project 3"
+		console.log(myAssignments);
+		myAssignments[5] = "Project 4"
+		console.log(myAssignments);
+		myAssignments[3] = "Project 4"
+		myAssignments[4] = "Project 5"
+		console.log(myAssignments);
+		myAssignments[5] = "VFW"
+		console.log(myAssignments);
+		
+//Outputs
+console.log("My hardest assignment was " + myAssignments[3]);
+console.log("Week 1: " + myAssignments[0]);
+console.log("Week 2: " + myAssignments[1]);
+console.log("Week 3: " + myAssignments[2]);
+console.log("Week 4: " + myAssignments[3]);
+console.log("Week 5: " + myAssignments[4]);
+console.log("Week 6: " + myAssignments[5]);
+
+//Array Property 
+console.log("The total number of assignments is " + myAssignments.length);
+
+//For Loop
+for(var i = 0; i < myAssignments.length; i++) {
+	
+	console.log("Index " + i + ": " + myAssignments[i]);	
+};
+
+//Argument Array
+if (myAssignments[3] === "Project 4 ") {
+	console.log("The last project due is " + myAssignments[3]);	
+} else {
+	console.log("There are more assignments than " + myAssignments[3]);
+};
+
+//Array Method
+myAssignments.push("Grade A+","Grade A","Grade B+");
+	console.log(myAssignments);
+myAssignments.pop("Grade B+");
+	console.log(myAssignments);
+myAssignments.pop("Grade A");
+	console.log(myAssignments);
+myAssignments.pop("Grade A+");
+	console.log(myAssignments);
+
+//Procedure
+var tests = 4;
+var discussions = 4;
+var totalWork
+var addition = function() {
+	totalWork = tests + discussions;
+	console.log("The total number is " + totalWork + " completed assignments." );
+};
+addition();
+tests = 4;
+discussions = 4;
 
 //While Loop 
 
- var scoops = 0;
-console.log("Starting Loop" + "<br />");
-while (scoops < 10){
-  console.log("Current Count : " + "Get More Scoops!" + scoops + "<br />");
-  scoops++;
+var homework = 0;
+	console.log("Starting Loop" + "<br />");
+while (homework < 08){
+	console.log("Current Count : " + "Assignments! :" + homework + " <br />");
+	homework++;
 }
-console.log("Scoops Complete!");
-console.log("Hope your enjoying that heaping ice cream sunday!");
+	console.log("Homework Complete!");
+	console.log("Time to celebrate your hard work!");
 
-//Return Boolean
-
-
-
-if ((!avocadoIce && !chileIce) || chocoice) {
-        console.log("The expression is true");
-    } else {
-        console.log("The expression is false");
-    }
- {
-}
-// Function - //Nested Condition
-var numberOfScoops = prompt("How many scoops did you eat?")
-
-if(numberOfScoops===10)
+//Function With Local Variables 
+function myFunction() 
 {
-    console.log("I finished ten scoops!")
+	var newWork = "Project 4 is next week.";
+	var newClass = "VFW doesn't start yet.";
+	if (newWork != newClass) {
+			var study = "We still have time to study!";
+		} else {
+			var getBook = "New Work Book";
+			console.log(getBook); }
 }
-
-else if(numberOfScoops<10)
-{
-    console.log("I couldn't finish!")
-}
-else if(numberOfScoops>10)
-{
-    console.log("I am the champion!")
-}
-
-// Number Function
-var bellyAche = " Oh, I feel sick!"
-var iceCream = myFunction(3*5);
-	console.log("They were feeling sick Johnny ate " + iceCream  + " scoops and said, " + bellyAche);
-	function myFunction(x, t) {
-		return 2 * 5;
-}
-
-// Local Variable
-if (name) {
-	var name = "Johnny"
-	console.log (name + " Go to bed and rest!");
-}
-
-// Math - Output
-
-console.log(15 - 5);   
-console.log(2 * 5);     
-console.log(1 / 10);
-
-// Function For Loop //Argument Array, //Array Method
+	var getBook = "New Work Book";
+	console.log(getBook);
 	
-function currentAt(iceCreamArray){
-
-	for (var i = 0; i < iceCreamArray.length; i++) {  
-		
-		console.log('Currently at ' + iceCreamArray[i]);
-		
-	}
-}
-var iceCreamArray =[1,2,3,4,5,6,7,8,9,10];
-currentAt(iceCreamArray); //Function with Argument Array
-
-// Return Number - //Return Value - Output
-
-var lemonadeMoney = function(useCash) {
-	var pricePerScoop = 3,
-		scoops;
-	if (useCash < pricePerScoop) {
-		console.log("That's not enough to buy anything!");
-		scoops = 0;
-	}
-	scoops = Math.floor(useCash / pricePerScoop);
-	return scoops;
-};
-
-var gotScoops = lemonadeMoney(30);
-console.log("Thanks for buying " + gotScoops + " scoops of Ice Cream!");
-
-
-function showName () {
-	var name = "Ogunjobi"; ////// Local Variables(varibal within method)
-	console.log (name);
-}
-showName(); //Print local variable
-console.log (name);  //Print global variable
-console.log(timePlay + myBoy + " and " + myBrother + willBe);
-
-//Return String
-var greet = function( person, greeting ) {
-var text = greeting + ", " + person;
-return text;
-};
-console.log( greet( "What should it be? ", " A new contest" ) ); 
-
 //Return Array
-var contestNames = ["Face Painting",
-                 "Dunk Apples",
-                 "Game Sorry",
-                 "Treasure Hunt"],
-    minutesPerGame = [20, 15, 25, 30],
-    kidNames = ["Johnny", "Tyelerr", "Avery"];
+var studyGroups = ["Code Academy",
+                 " W3Schools",
+                 "Full Sail Online",
+                 "Google Search"],
+    minutesPerStudy = [20, 15, 25, 30],
+    siteNames = ["Team A", "Team B", "Team C"];
     
-var gameTime = function(whatGame) {
-    var gameName = contestNames[whatGame],
-        minutesThisGame = minutesPerGame[gameNumber];
-    console.log(kidNames[0] + " wanted us to visit the " + gameName +
-        " for " + minutesThisGame + " minutes. So I set the timer on" +
+var siteTime = function(whatSite) {
+    var siteName = studyGroups[whatSite],
+        minutesThisSite = minutesPerStudy[siteNumber];
+    console.log(siteNames[0] + " wanted us to visit the " + siteName +
+        " for " + minutesThisSite + " minutes. So I set the timer on" +
         " my watch!");
-    for (var minutes = 0; minutes < minutesThisGame; minutes += 5) {
-            var minutesRemain = minutesThisGame - minutes;
+ /*Nested Loop*/  for (var minutes = 0; minutes < minutesThisSite; minutes += 5) {
+            var minutesRemain = minutesThisSite - minutes;
             console.log("We have " + minutesRemain + " minutes left. " +
                 minutes + " minutes have past.");
         };
-    console.log("We finished with the " + gameName + ".");
+    console.log("We finished with the " + siteName + ".");
 };
 
-for (var gameNumber = 0; gameNumber < contestNames.length; gameNumber++) {
-    gameTime(gameNumber);
+for (var siteNumber = 0; siteNumber < studyGroups.length; siteNumber++) {
+    siteTime(siteNumber);
 };
 
+//Argument Number
+var numberOfClasses = prompt("How many classes did you take?")
 
-//Function - //Nested Loop //Array Methord
-function seeDream(){
-	for(var i=0;i<iceCream.length;i++){
-		var dreamIceCream=[];
-		var eatIceCream=iceCream[i];
-		var decoration=" ";
-		var blank=" "
-		for(var j=0;j<decorate.length;j++){ //Nested Loop
-			 decoration=decoration+decorate[j]+blank; 	
-		  
-		}
-		blank=" "
-		var cone=eatIceCream +" with "+decoration
-		dreamIceCream.push(cone); //Array Method
-		console.log("He is in dream: eating  "+dreamIceCream.toString()+"</br>"); //array method
-	}	
+if(numberOfClasses===5) {
+	console.log("I took enough!")
+} else {(numberOfClasses<5)
+	console.log("I didn't take enough!")
+};
 
+//Argument String
+var Work = prompt("How much work did you do")
+
+if(Work===true) {
+	console.log("I finished!")
+} else {(Work===false)
+	console.log("I couldn't finish!")
+};
+
+//Number Function
+function myFunction(a, b) {
+    return a * b;             
 }
+console.log(myFunction(3,3));
 
-seeDream();
+//String Function
+var carModel = "Volvo";
+myFunction();
+
+function myFunction() {
+    console.log("I drive a 2014 " + carModel + ". ");
+};
+
+//Function
+function sayHello(name, age)
+{
+   console.log( name + " is " + "name and I am " + age + " years old.");
+};
+
+//Function
+var number = 31
+
+if(number == 31){
+  console.log("It's my birthday.")
+  }
+else{
+  console.log("Not my birthday yet.")
+  }
+  
+//Math
+	console.log(365 - 200);
+	console.log(365 + 200);
+	console.log(365 * 200);
 
 //JSON
-var json2 = {
-    "Contestants" : [
-        {
-        "vvid" : "0123456",
-        "name" : "Johnny",
-        "age": 21
-        },
-        {
-        "vvid" : "0123457",
-        "name" : "Tyelerr",
-        "age": 42
-        },
-        {
-        "vvid" : "0123458",
-        "name" : "Avery",
-        "age": 22
-        }
-    ]
-};
-
 var handleData = function (json) {
-    console.log(json2);
+    for (var i = 0; i < json.projects.length; i++) {
+	var project = json.projects[i];
+	console.log("User ID: " + project.vvid + " Name: " + project.name + ", Date: " +
+		    project.date);
+    };
 };
-
 handleData(json2);
 
+//
+var jsonstring = JSON.stringify(json);
+console.log(jsonstring);
+
+//Finish
+console.log("Good Bye.");
+
+var receivedjson = JSON.parse(jsonstring);
+console.log(receivedjson);
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
